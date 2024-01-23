@@ -24,7 +24,7 @@ const HomeIndex = () => {
   for (var i = length - 1; i >= 0; i--) {
     reverseArray.push(steppers[i]);
   }
-
+  // test
   return (
     <section id="home">
       <div className="flex p-4 bg-emerald-50">
