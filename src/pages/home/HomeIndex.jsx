@@ -61,55 +61,55 @@ const HomeIndex = () => {
         <div className="flex flex-col mt-10">
           <h1 className="font-bold text-4xl">My Skill</h1>
           <div className="flex flex-wrap gap-4">
-            <div class="max-w-sm rounded overflow-hidden shadow-md hover:shadow-xl transition-all duration-200 mt-10 bg-sky-50">
+            <div className="max-w-sm rounded overflow-hidden shadow-md hover:shadow-xl transition-all duration-200 mt-10 bg-sky-50">
               {/* <img class="w-full" src="/img/card-top.jpg" alt="Sunset in the mountains"/> */}
-              <div class="px-6 py-4">
-                <div class="font-bold text-xl mb-2">Front End</div>
-                <p class="text-gray-700 text-base">
+              <div className="px-6 py-4">
+                <div className="font-bold text-xl mb-2">Front End</div>
+                <p className="text-gray-700 text-base">
                   Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                   Voluptatibus quia, nulla! Maiores et perferendis eaque,
                   exercitationem praesentium nihil.
                 </p>
               </div>
             </div>
-            <div class="max-w-sm rounded overflow-hidden shadow-md hover:shadow-xl transition-all duration-200 mt-10 bg-sky-50">
+            <div className="max-w-sm rounded overflow-hidden shadow-md hover:shadow-xl transition-all duration-200 mt-10 bg-sky-50">
               {/* <img class="w-full" src="/img/card-top.jpg" alt="Sunset in the mountains"/> */}
-              <div class="px-6 py-4">
-                <div class="font-bold text-xl mb-2">Back End</div>
-                <p class="text-gray-700 text-base">
+              <div className="px-6 py-4">
+                <div className="font-bold text-xl mb-2">Back End</div>
+                <p className="text-gray-700 text-base">
                   Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                   Voluptatibus quia, nulla! Maiores et perferendis eaque,
                   exercitationem praesentium nihil.
                 </p>
               </div>
             </div>
-            <div class="max-w-sm rounded overflow-hidden shadow-md hover:shadow-xl transition-all duration-200 mt-10 bg-sky-50">
+            <div className="max-w-sm rounded overflow-hidden shadow-md hover:shadow-xl transition-all duration-200 mt-10 bg-sky-50">
               {/* <img class="w-full" src="/img/card-top.jpg" alt="Sunset in the mountains"/> */}
-              <div class="px-6 py-4">
-                <div class="font-bold text-xl mb-2">Data Science</div>
-                <p class="text-gray-700 text-base">
+              <div className="px-6 py-4">
+                <div className="font-bold text-xl mb-2">Data Science</div>
+                <p className="text-gray-700 text-base">
                   Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                   Voluptatibus quia, nulla! Maiores et perferendis eaque,
                   exercitationem praesentium nihil.
                 </p>
               </div>
             </div>
-            <div class="max-w-sm rounded overflow-hidden shadow-md hover:shadow-xl transition-all duration-200 mt-10 bg-sky-50">
+            <div className="max-w-sm rounded overflow-hidden shadow-md hover:shadow-xl transition-all duration-200 mt-10 bg-sky-50">
               {/* <img class="w-full" src="/img/card-top.jpg" alt="Sunset in the mountains"/> */}
-              <div class="px-6 py-4">
-                <div class="font-bold text-xl mb-2">System Design</div>
-                <p class="text-gray-700 text-base">
+              <div className="px-6 py-4">
+                <div className="font-bold text-xl mb-2">System Design</div>
+                <p className="text-gray-700 text-base">
                   Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                   Voluptatibus quia, nulla! Maiores et perferendis eaque,
                   exercitationem praesentium nihil.
                 </p>
               </div>
             </div>
-            <div class="max-w-sm rounded overflow-hidden shadow-md hover:shadow-xl transition-all duration-200 mt-10 bg-sky-50">
+            <div className="max-w-sm rounded overflow-hidden shadow-md hover:shadow-xl transition-all duration-200 mt-10 bg-sky-50">
               {/* <img class="w-full" src="/img/card-top.jpg" alt="Sunset in the mountains"/> */}
-              <div class="px-6 py-4">
-                <div class="font-bold text-xl mb-2">DevOps</div>
-                <p class="text-gray-700 text-base">
+              <div className="px-6 py-4">
+                <div className="font-bold text-xl mb-2">DevOps</div>
+                <p className="text-gray-700 text-base">
                   Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                   Voluptatibus quia, nulla! Maiores et perferendis eaque,
                   exercitationem praesentium nihil.

@@ -1,5 +1,6 @@
 import React, { useEffect } from "react";
 import { Link } from "react-scroll";
+import myLogo from "../../assets/mylogo.png";
 
 const TopBar = () => {
   const [navActive, setNavActive] = React.useState(false);
@@ -20,11 +21,11 @@ const TopBar = () => {
         }
       >
         <div className="p-4 shadow-md">
-          <div className="flex justify-between gap-4 ">
-            <div className="flex p-2">
-              <p>Logo</p>
+          <div className="flex justify-between content-center">
+            <div className="flex">
+              <img src={myLogo} alt="logo" className="w-40" />
             </div>
-            <div className="flex gap-4 p-2">
+            <div className="flex gap-4">
               <Link
                 to={"home"}
                 activeClass="active"
@@ -32,7 +33,7 @@ const TopBar = () => {
                 smooth={true}
                 offset={-70}
                 duration={900}
-                className="px-4 text-sky-600 rounded-md cursor-pointer text-sm font-bold hover:border-b hover:border-sky-400 transition-all duration-300 ease-in-out"
+                className="px-4 text-sky-600 rounded-md mt-6 cursor-pointer text-sm font-bold transition-all duration-300 ease-in-out"
               >
                 Home
               </Link>
@@ -43,7 +44,7 @@ const TopBar = () => {
                 smooth={true}
                 offset={-70}
                 duration={900}
-                className="px-4 text-sky-600 rounded-md cursor-pointer text-sm font-bold hover:border-b hover:border-sky-400  transition-all duration-300 ease-in-out"
+                className="px-4 text-sky-600 rounded-md mt-6 cursor-pointer text-sm font-bold transition-all duration-300 ease-in-out"
               >
                 Portfolio
               </Link>
@@ -54,7 +55,7 @@ const TopBar = () => {
                 smooth={true}
                 offset={-70}
                 duration={900}
-                className="px-4 text-sky-600 rounded-md cursor-pointer text-sm font-bold hover:border-b hover:border-sky-400  transition-all duration-300 ease-in-out"
+                className="px-4 text-sky-600 rounded-md mt-6 cursor-pointer text-sm font-bold transition-all duration-300 ease-in-out"
               >
                 About Me
               </Link>
@@ -65,7 +66,7 @@ const TopBar = () => {
                 smooth={true}
                 offset={-70}
                 duration={900}
-                className="px-4 text-sky-600 rounded-md cursor-pointer text-sm font-bold hover:border-b hover:border-sky-400  transition-all duration-300 ease-in-out"
+                className="px-4 text-sky-600 rounded-md mt-6 cursor-pointer text-sm font-bold transition-all duration-300 ease-in-out"
               >
                 Employers FeedBack
               </Link>
@@ -78,9 +79,9 @@ const TopBar = () => {
                 smooth={true}
                 offset={-70}
                 duration={900}
-                className="bg-sky-700 px-4 cursor-pointer rounded-md p-2"
+                className="bg-sky-700 px-4 cursor-pointer rounded-md"
               >
-                <p className="text-sm font-bold text-white">Contact Me</p>
+                <p className="text-sm font-bold text-white mt-6">Contact Me</p>
               </Link>
             </div>
           </div>
