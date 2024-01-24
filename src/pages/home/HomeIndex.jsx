@@ -1,6 +1,23 @@
 import React from "react";
 import momo from "../../assets/sengathith.jpeg";
 import { TiTick } from "react-icons/ti";
+
+import { TbBrandVite } from "react-icons/tb";
+import { TbBrandNextjs } from "react-icons/tb";
+import { LuFileJson2 } from "react-icons/lu";
+import { FaCss3Alt } from "react-icons/fa";
+import { FaHtml5 } from "react-icons/fa6";
+import { SiTailwindcss } from "react-icons/si";
+import { GrGraphQl } from "react-icons/gr";
+
+import { FaNodeJs } from "react-icons/fa";
+import { SiMysql } from "react-icons/si";
+import { BiLogoPostgresql } from "react-icons/bi";
+import { FaPython } from "react-icons/fa";
+import { DiNginx } from "react-icons/di";
+import { SiKubernetes } from "react-icons/si";
+import { TbBinaryTree } from "react-icons/tb";
+
 const HomeIndex = () => {
   const steppers = [
     {
@@ -59,60 +76,71 @@ const HomeIndex = () => {
       </div>
       <div className="flex p-4 ml-[160px]">
         <div className="flex flex-col mt-10">
-          <h1 className="font-bold text-4xl">My Skill</h1>
+          <h1 className="font-bold text-4xl">My Skill and Interest</h1>
           <div className="flex flex-wrap gap-4">
             <div className="max-w-sm rounded overflow-hidden shadow-md hover:shadow-xl transition-all duration-200 mt-10 bg-sky-50">
-              {/* <img class="w-full" src="/img/card-top.jpg" alt="Sunset in the mountains"/> */}
               <div className="px-6 py-4">
-                <div className="font-bold text-xl mb-2">Front End</div>
-                <p className="text-gray-700 text-base">
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                  Voluptatibus quia, nulla! Maiores et perferendis eaque,
-                  exercitationem praesentium nihil.
-                </p>
+                <p className="flex font-bold text-xl mb-2">Front End</p>
+                <div className="flex gap-6">
+                  <TbBrandVite className="w-8 h-8" />
+                  <TbBrandNextjs className="w-8 h-8" />
+                  <LuFileJson2 className="w-8 h-8" />
+                  <FaCss3Alt className="w-8 h-8" />
+                </div>
+                <div className="flex gap-6 mt-4">
+                  <FaHtml5 className="w-8 h-8" />
+                  <SiTailwindcss className="w-8 h-8" />
+                  <GrGraphQl className="w-8 h-8" />
+                </div>
+              </div>
+            </div>
+
+            <div className="max-w-sm rounded overflow-hidden shadow-md hover:shadow-xl transition-all duration-200 mt-10 bg-sky-50">
+              <div className="px-6 py-4">
+                <p className="font-bold text-xl mb-2">Back End</p>
+                <div className="flex gap-6">
+                  <FaNodeJs className="w-8 h-8" />
+                  <SiMysql className="w-8 h-8" />
+                  <BiLogoPostgresql className="w-8 h-8" />
+                  <FaPython className="w-8 h-8" />
+                </div>
+                <div className="flex gap-6 mt-4">
+                  <DiNginx className="w-8 h-8" />
+                  <SiKubernetes className="w-8 h-8" />
+                  <TbBinaryTree className="w-8 h-8" />
+                </div>
               </div>
             </div>
             <div className="max-w-sm rounded overflow-hidden shadow-md hover:shadow-xl transition-all duration-200 mt-10 bg-sky-50">
-              {/* <img class="w-full" src="/img/card-top.jpg" alt="Sunset in the mountains"/> */}
-              <div className="px-6 py-4">
-                <div className="font-bold text-xl mb-2">Back End</div>
-                <p className="text-gray-700 text-base">
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                  Voluptatibus quia, nulla! Maiores et perferendis eaque,
-                  exercitationem praesentium nihil.
-                </p>
-              </div>
-            </div>
-            <div className="max-w-sm rounded overflow-hidden shadow-md hover:shadow-xl transition-all duration-200 mt-10 bg-sky-50">
-              {/* <img class="w-full" src="/img/card-top.jpg" alt="Sunset in the mountains"/> */}
               <div className="px-6 py-4">
                 <div className="font-bold text-xl mb-2">Data Science</div>
                 <p className="text-gray-700 text-base">
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                  Voluptatibus quia, nulla! Maiores et perferendis eaque,
-                  exercitationem praesentium nihil.
+                  Design and construct new processes for data modeling and
+                  production using prototypes, algorithms, predictive models,
+                  and custom analysis.
                 </p>
               </div>
             </div>
             <div className="max-w-sm rounded overflow-hidden shadow-md hover:shadow-xl transition-all duration-200 mt-10 bg-sky-50">
-              {/* <img class="w-full" src="/img/card-top.jpg" alt="Sunset in the mountains"/> */}
+              <div className="px-6 py-4">
+                <div className="font-bold text-xl mb-2">Microcontroller</div>
+                <p className="text-gray-700 text-base">
+                  Everything is possible, if you don't stop trying.
+                </p>
+              </div>
+            </div>
+            <div className="max-w-sm rounded overflow-hidden shadow-md hover:shadow-xl transition-all duration-200 mt-10 bg-sky-50">
               <div className="px-6 py-4">
                 <div className="font-bold text-xl mb-2">System Design</div>
                 <p className="text-gray-700 text-base">
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                  Voluptatibus quia, nulla! Maiores et perferendis eaque,
-                  exercitationem praesentium nihil.
-                </p>
-              </div>
-            </div>
-            <div className="max-w-sm rounded overflow-hidden shadow-md hover:shadow-xl transition-all duration-200 mt-10 bg-sky-50">
-              {/* <img class="w-full" src="/img/card-top.jpg" alt="Sunset in the mountains"/> */}
-              <div className="px-6 py-4">
-                <div className="font-bold text-xl mb-2">DevOps</div>
-                <p className="text-gray-700 text-base">
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                  Voluptatibus quia, nulla! Maiores et perferendis eaque,
-                  exercitationem praesentium nihil.
+                  System design is the process of defining the architecture,
+                  components, modules, interfaces, and data for a system to
+                  satisfy specified requirements. It involves translating user
+                  requirements into a detailed blueprint that guides the
+                  implementation phase. The goal is to create a well-organized
+                  and efficient structure that meets the intended purpose while
+                  considering factors like scalability, maintainability, and
+                  performance.
                 </p>
               </div>
             </div>

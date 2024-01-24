@@ -4,15 +4,24 @@ export const portfolio = [
   {
     id: 1,
     title: "Web Application",
-    description:
-      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, nulla! Maiores et perferendis eaque, exercitationem praesentium nihil.",
+    description: "In Progress",
+  },
+  {
+    id: 2,
+    title: "Web Application",
+    description: "In Progress",
+  },
+  {
+    id: 3,
+    title: "Web Application",
+    description: "In Progress",
   },
 ];
 
 const PortfolioIndex = () => {
   return (
     <section id="portfolio" className="flex p-4">
-      <div className="flex flex-col">
+      <div className="flex flex-col mb-10">
         <div className="flex p-4 ml-[160px]">
           <div className="flex flex-col mt-10">
             <h1 className="font-bold text-4xl">Portfolio</h1>
@@ -22,50 +31,20 @@ const PortfolioIndex = () => {
         <div className="flex p-4 ml-[160px]">
           <div className="flex flex-col ">
             <div className="flex flex-wrap gap-4">
-              <div className="max-w-sm rounded overflow-hidden shadow-md hover:shadow-xl transition-all duration-200 mt-10 bg-sky-50">
-                {/* <img class="w-full" src="/img/card-top.jpg" alt="Sunset in the mountains"/> */}
-                <div class="px-6 py-4">
-                  <div class="font-bold text-xl mb-2">Web Application</div>
-                  <p class="text-gray-700 text-base">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                    Voluptatibus quia, nulla! Maiores et perferendis eaque,
-                    exercitationem praesentium nihil.
-                  </p>
-                </div>
-              </div>
-              <div className="max-w-sm rounded overflow-hidden shadow-md hover:shadow-xl transition-all duration-200 mt-10 bg-sky-50">
-                {/* <img class="w-full" src="/img/card-top.jpg" alt="Sunset in the mountains"/> */}
-                <div className="px-6 py-4">
-                  <div className="font-bold text-xl mb-2">Web Application</div>
-                  <p className="text-gray-700 text-base">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                    Voluptatibus quia, nulla! Maiores et perferendis eaque,
-                    exercitationem praesentium nihil.
-                  </p>
-                </div>
-              </div>
-              <div className="max-w-sm rounded overflow-hidden shadow-md hover:shadow-xl transition-all duration-200 mt-10 bg-sky-50">
-                {/* <img class="w-full" src="/img/card-top.jpg" alt="Sunset in the mountains"/> */}
-                <div className="px-6 py-4">
-                  <div className="font-bold text-xl mb-2">Web Application</div>
-                  <p className="text-gray-700 text-base">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                    Voluptatibus quia, nulla! Maiores et perferendis eaque,
-                    exercitationem praesentium nihil.
-                  </p>
-                </div>
-              </div>
-              <div className="max-w-sm rounded overflow-hidden shadow-md hover:shadow-xl transition-all duration-200 mt-10 bg-sky-50">
-                {/* <img class="w-full" src="/img/card-top.jpg" alt="Sunset in the mountains"/> */}
-                <div className="px-6 py-4">
-                  <div className="font-bold text-xl mb-2">Web Application</div>
-                  <p className="text-gray-700 text-base">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                    Voluptatibus quia, nulla! Maiores et perferendis eaque,
-                    exercitationem praesentium nihil.
-                  </p>
-                </div>
-              </div>
+              {portfolio.map((item) => {
+                return (
+                  <>
+                    <div className="max-w-sm rounded overflow-hidden shadow-md hover:shadow-xl transition-all duration-200 mt-4 bg-sky-50">
+                      <div class="px-6 py-4">
+                        <div class="font-bold text-xl mb-2">{item.title}</div>
+                        <p class="text-gray-700 text-base">
+                          {item.description}
+                        </p>
+                      </div>
+                    </div>
+                  </>
+                );
+              })}
             </div>
           </div>
         </div>
