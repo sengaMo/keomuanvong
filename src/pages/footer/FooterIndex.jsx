@@ -22,10 +22,10 @@ const FooterIndex = () => {
   return (
     <>
       <section id="footer">
-        <div className="flex p-4 w-full mt-[200px]">
+        <div className="flex p-4 w-full mt-10 phone:mt-[200px]">
           <div className="flex flex-col w-full">
             <div className="grow flex">
-              <img src={mylogo} alt="logo" className="w-80" />
+              <img src={mylogo} alt="logo" className="w-[350px] phone:w-80" />
             </div>
             <div className="border-b border-emerald-600" />
             <div className="grow flex justify-center gap-4 mt-4 p-4">

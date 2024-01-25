@@ -44,14 +44,16 @@ const HomeIndex = () => {
   // test
   return (
     <section id="home">
-      <div className="flex p-4 bg-emerald-50">
-        <div className="grows flex justify-center w-full">
-          <div className="flex flex-col p-10 mt-10">
+      <div className="flex flex-col-reverse phone:flex-row p-4 bg-emerald-50">
+        <div className="w-full flex justify-center">
+          <div className="flex flex-col p-10 mt-0 phone:mt-10">
             <div className="w-1/2">
               <p className="font-bold">Hey, I'm Mo</p>
             </div>
-            <h className="font-bold text-6xl mt-4">Full Stack Developer</h>
-            <div className="w-1/2 mt-4">
+            <h className="font-bold text-2xl phone:text-6xl mt-4">
+              Full Stack Developer
+            </h>
+            <div className="w-80 mt-4">
               <p className="text-sm">
                 Lorem ipsum dolor sit, amet consectetur adipisicing elit.
                 Dolorum, quas. Amet soluta assumenda cum?
@@ -68,89 +70,95 @@ const HomeIndex = () => {
             </div>
           </div>
         </div>
-        <div className="grows flex justify-center w-full">
+        <div className="w-full flex justify-center">
           <div className="flex mt-[100px]">
             <img className="w-[340px] h-60 rounded-md" src={momo} alt="hero" />
           </div>
         </div>
       </div>
-      <div className="flex p-4 ml-[160px]">
+      <div className="flex p-4 phone:ml-[160px]">
         <div className="flex flex-col mt-10">
-          <h1 className="font-bold text-4xl">My Skill and Interest</h1>
-          <div className="flex flex-wrap gap-4">
-            <div className="max-w-sm rounded overflow-hidden shadow-md hover:shadow-xl transition-all duration-200 mt-10 bg-sky-50">
-              <div className="px-6 py-4">
-                <p className="flex font-bold text-xl mb-2">Front End</p>
-                <div className="flex gap-6">
-                  <TbBrandVite className="w-8 h-8" />
-                  <TbBrandNextjs className="w-8 h-8" />
-                  <LuFileJson2 className="w-8 h-8" />
-                  <FaCss3Alt className="w-8 h-8" />
-                </div>
-                <div className="flex gap-6 mt-4">
-                  <FaHtml5 className="w-8 h-8" />
-                  <SiTailwindcss className="w-8 h-8" />
-                  <GrGraphQl className="w-8 h-8" />
+          <h1 className="font-bold text-2xl phone:text-4xl">
+            My Skill and Interest
+          </h1>
+          <div className="w-full">
+            <div className="flex flex-wrap justify-center gap-4">
+              <div className="max-w-sm rounded overflow-hidden shadow-md hover:shadow-xl transition-all duration-200 mt-10 bg-sky-50">
+                <div className="px-6 py-4">
+                  <p className="flex font-bold text-xl mb-2">Front End</p>
+                  <div className="flex gap-6">
+                    <TbBrandVite className="w-8 h-8" />
+                    <TbBrandNextjs className="w-8 h-8" />
+                    <LuFileJson2 className="w-8 h-8" />
+                    <FaCss3Alt className="w-8 h-8" />
+                  </div>
+                  <div className="flex gap-6 mt-4">
+                    <FaHtml5 className="w-8 h-8" />
+                    <SiTailwindcss className="w-8 h-8" />
+                    <GrGraphQl className="w-8 h-8" />
+                  </div>
                 </div>
               </div>
-            </div>
 
-            <div className="max-w-sm rounded overflow-hidden shadow-md hover:shadow-xl transition-all duration-200 mt-10 bg-sky-50">
-              <div className="px-6 py-4">
-                <p className="font-bold text-xl mb-2">Back End</p>
-                <div className="flex gap-6">
-                  <FaNodeJs className="w-8 h-8" />
-                  <SiMysql className="w-8 h-8" />
-                  <BiLogoPostgresql className="w-8 h-8" />
-                  <FaPython className="w-8 h-8" />
+              <div className="max-w-sm rounded overflow-hidden shadow-md hover:shadow-xl transition-all duration-200 mt-10 bg-sky-50">
+                <div className="px-6 py-4">
+                  <p className="font-bold text-xl mb-2">Back End</p>
+                  <div className="flex gap-6">
+                    <FaNodeJs className="w-8 h-8" />
+                    <SiMysql className="w-8 h-8" />
+                    <BiLogoPostgresql className="w-8 h-8" />
+                    <FaPython className="w-8 h-8" />
+                  </div>
+                  <div className="flex gap-6 mt-4">
+                    <DiNginx className="w-8 h-8" />
+                    <SiKubernetes className="w-8 h-8" />
+                    <TbBinaryTree className="w-8 h-8" />
+                  </div>
                 </div>
-                <div className="flex gap-6 mt-4">
-                  <DiNginx className="w-8 h-8" />
-                  <SiKubernetes className="w-8 h-8" />
-                  <TbBinaryTree className="w-8 h-8" />
+              </div>
+              <div className="max-w-sm rounded overflow-hidden shadow-md hover:shadow-xl transition-all duration-200 mt-10 bg-sky-50">
+                <div className="px-6 py-4">
+                  <div className="font-bold text-xl mb-2">Data Science</div>
+                  <p className="text-gray-700 text-base">
+                    Design and construct new processes for data modeling and
+                    production using prototypes, algorithms, predictive models,
+                    and custom analysis.
+                  </p>
                 </div>
               </div>
-            </div>
-            <div className="max-w-sm rounded overflow-hidden shadow-md hover:shadow-xl transition-all duration-200 mt-10 bg-sky-50">
-              <div className="px-6 py-4">
-                <div className="font-bold text-xl mb-2">Data Science</div>
-                <p className="text-gray-700 text-base">
-                  Design and construct new processes for data modeling and
-                  production using prototypes, algorithms, predictive models,
-                  and custom analysis.
-                </p>
+              <div className="max-w-sm rounded overflow-hidden shadow-md hover:shadow-xl transition-all duration-200 mt-10 bg-sky-50">
+                <div className="px-6 py-4">
+                  <div className="font-bold text-xl mb-2">Microcontroller</div>
+                  <p className="text-gray-700 text-base">
+                    Everything is possible, if you don't stop trying.
+                  </p>
+                </div>
               </div>
-            </div>
-            <div className="max-w-sm rounded overflow-hidden shadow-md hover:shadow-xl transition-all duration-200 mt-10 bg-sky-50">
-              <div className="px-6 py-4">
-                <div className="font-bold text-xl mb-2">Microcontroller</div>
-                <p className="text-gray-700 text-base">
-                  Everything is possible, if you don't stop trying.
-                </p>
-              </div>
-            </div>
-            <div className="max-w-sm rounded overflow-hidden shadow-md hover:shadow-xl transition-all duration-200 mt-10 bg-sky-50">
-              <div className="px-6 py-4">
-                <div className="font-bold text-xl mb-2">System Design</div>
-                <p className="text-gray-700 text-base">
-                  System design is the process of defining the architecture,
-                  components, modules, interfaces, and data for a system to
-                  satisfy specified requirements. It involves translating user
-                  requirements into a detailed blueprint that guides the
-                  implementation phase. The goal is to create a well-organized
-                  and efficient structure that meets the intended purpose while
-                  considering factors like scalability, maintainability, and
-                  performance.
-                </p>
+              <div className="max-w-sm rounded overflow-hidden shadow-md hover:shadow-xl transition-all duration-200 mt-10 bg-sky-50">
+                <div className="px-6 py-4">
+                  <div className="font-bold text-xl mb-2">System Design</div>
+                  <p className="text-gray-700 text-base">
+                    System design is the process of defining the architecture,
+                    components, modules, interfaces, and data for a system to
+                    satisfy specified requirements. It involves translating user
+                    requirements into a detailed blueprint that guides the
+                    implementation phase. The goal is to create a well-organized
+                    and efficient structure that meets the intended purpose
+                    while considering factors like scalability, maintainability,
+                    and performance.
+                  </p>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </div>
-      <div className="flex p-4 ml-[160px]">
-        <div className="flex flex-col mt-10">
-          <h1 className="font-bold text-4xl">Experience and Education</h1>
-          <div className="mt-[50px]">
+      <div className="flex p-4 phone:ml-[160px]">
+        <div className="flex flex-col mt-6 phone:mt-10">
+          <h1 className="font-bold text-2xl phone:text-4xl">
+            Experience and Education
+          </h1>
+          <div className="mt-6 phone:mt-[50px]">
             {reverseArray.map((stepper, index) => {
               return (
                 <div className="flex gap-4">

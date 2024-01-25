@@ -3,16 +3,18 @@ import momo from "../../assets/sengathith.jpeg";
 const AboutMeIndex = () => {
   return (
     <section id="about">
-      <div className="flex p-4 bg-emerald-50">
+      <div className="flex flex-col phone:flex-row p-4 bg-emerald-50">
         <div className="grows flex justify-center w-full">
-          <div className="flex mt-[80px] mb-20">
+          <div className="flex mt-[80px] phone:mb-20">
             <img className="w-[340px] h-60 rounded-md" src={momo} alt="hero" />
           </div>
         </div>
         <div className="grows flex justify-center w-full">
-          <div className="flex flex-col p-10 mt-10">
-            <h className="font-bold text-6xl mt-4">About Me</h>
-            <div className="w-[800px] mt-4">
+          <div className="flex flex-col p-10 phone:mt-10">
+            <h className="font-bold text-2xl text-center phone:text-6xl phone:mt-4">
+              About Me
+            </h>
+            <div className="phone:w-[800px] mt-4">
               <p className="text-sm">
                 I am passionate about my work. Because I love what I do, I have
                 a steady source of motivation that drives me to do my best. In

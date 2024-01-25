@@ -4,17 +4,16 @@ const FeedBackIndex = () => {
   return (
     <section id="feedback">
       <div className="flex flex-col">
-        <div className="flex p-4 ml-[160px]">
+        <div className="flex p-4 phone:ml-[160px]">
           <div className="flex flex-col mt-10">
             <h1 className="font-bold text-4xl">Client FeedBack</h1>
             <p className="text-sm font-bold">My Partner</p>
           </div>
         </div>
-        <div className="flex p-4 ml-[160px]">
+        <div className="flex p-4 phone:ml-[160px]">
           <div className="flex flex-col ">
             <div className="flex flex-wrap gap-4">
               <div className="max-w-sm rounded overflow-hidden shadow-md hover:shadow-2xl transition-all duration-200 mt-10 border border-emerald-700 ">
-                {/* <img class="w-full" src="/img/card-top.jpg" alt="Sunset in the mountains"/> */}
                 <div className="px-6 py-4">
                   <div className="font-bold text-xl mb-2">FeedBack</div>
                   <p className="text-gray-700 text-base">
@@ -25,7 +24,6 @@ const FeedBackIndex = () => {
                 </div>
               </div>
               <div className="max-w-sm rounded overflow-hidden shadow-md hover:shadow-2xl transition-all duration-200 mt-10 border border-emerald-700 ">
-                {/* <img class="w-full" src="/img/card-top.jpg" alt="Sunset in the mountains"/> */}
                 <div className="px-6 py-4">
                   <div className="font-bold text-xl mb-2">FeedBack</div>
                   <p className="text-gray-700 text-base">
@@ -36,7 +34,6 @@ const FeedBackIndex = () => {
                 </div>
               </div>
               <div className="max-w-sm rounded overflow-hidden shadow-md hover:shadow-2xl transition-all duration-200 mt-10 border border-emerald-700 ">
-                {/* <img class="w-full" src="/img/card-top.jpg" alt="Sunset in the mountains"/> */}
                 <div className="px-6 py-4">
                   <div className="font-bold text-xl mb-2">FeedBack</div>
                   <p className="text-gray-700 text-base">
@@ -47,7 +44,6 @@ const FeedBackIndex = () => {
                 </div>
               </div>
               <div className="max-w-sm rounded overflow-hidden shadow-md hover:shadow-2xl transition-all duration-200 mt-10 border border-emerald-700 ">
-                {/* <img class="w-full" src="/img/card-top.jpg" alt="Sunset in the mountains"/> */}
                 <div className="px-6 py-4">
                   <div className="font-bold text-xl mb-2">FeedBack</div>
                   <p className="text-gray-700 text-base">

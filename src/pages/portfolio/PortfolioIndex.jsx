@@ -20,16 +20,16 @@ export const portfolio = [
 
 const PortfolioIndex = () => {
   return (
-    <section id="portfolio" className="flex p-4">
+    <section id="portfolio">
       <div className="flex flex-col mb-10">
-        <div className="flex p-4 ml-[160px]">
-          <div className="flex flex-col mt-10">
+        <div className="flex p-4 phone:ml-[160px]">
+          <div className="flex flex-col mt-6 phone:mt-10">
             <h1 className="font-bold text-4xl">Portfolio</h1>
             <p className="text-sm font-bold">My Project</p>
           </div>
         </div>
-        <div className="flex p-4 ml-[160px]">
-          <div className="flex flex-col ">
+        <div className="flex ml-20 p-4 phone:ml-[160px]">
+          <div className="flex flex-col">
             <div className="flex flex-wrap gap-4">
               {portfolio.map((item) => {
                 return (

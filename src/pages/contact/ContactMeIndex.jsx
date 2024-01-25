@@ -71,14 +71,16 @@ const ContactMeIndex = () => {
     <>
       <ToastContainer />
       <section id="contact">
-        <div className="flex justify-center mt-[200px] w-full">
+        <div className="flex justify-center mt-20 phone:mt-[200px] w-full">
           <div className="flex flex-col">
             <h1 className="font-bold text-4xl text-center">Contact Me</h1>
-            <p className="text-gray-700 text-base">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-              Voluptatibus quia, nulla! Maiores et perferendis eaque,
-              exercitationem praesentium nihil.
-            </p>
+            <div className="w-full ">
+              <p className="text-gray-700 w-80 phone:w-full ml-[160px] phone:ml-[0px] mt-2 text-sm">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Voluptatibus quia, nulla! Maiores et perferendis eaque,
+                exercitationem praesentium nihil.
+              </p>
+            </div>
             <form onSubmit={handleSubmit}>
               <div className="flex flex-wrap justify-center mt-10 gap-4">
                 <div className="flex flex-col w-80">
@@ -142,7 +144,7 @@ const ContactMeIndex = () => {
                 </div>
               </div>
               <div className="flex flex-wrap justify-center mt-4 gap-4">
-                <div className="flex flex-col w-[650px]">
+                <div className="flex flex-col w-[320px] phone:w-[650px]">
                   <label className="text-sm">Choose Project:</label>
                   <select
                     type="text"
@@ -162,7 +164,7 @@ const ContactMeIndex = () => {
                 </div>
               </div>
               <div className="flex flex-wrap justify-center mt-4 gap-4">
-                <div className="flex flex-col w-[650px]">
+                <div className="flex flex-col w-[320px] phone:w-[650px]">
                   <label className="text-sm">Description:</label>
                   <textarea
                     type="text"
@@ -178,7 +180,7 @@ const ContactMeIndex = () => {
                 </div>
               </div>
               <div className="flex flex-wrap justify-center mt-4 gap-4">
-                <div className="flex flex-col w-[650px]">
+                <div className="flex flex-col w-[320px] phone:w-[650px]">
                   <button
                     type="submit"
                     className=" bg-gradient-to-b from-emerald-500 to-emerald-700 hover:shadow-md text-white font-bold py-2 px-4 rounded-md"
