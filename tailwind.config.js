@@ -2,16 +2,26 @@
 export default {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
-    extend: {},
+    container: {
+      center: true,
+      padding: "14px",
+    },
     screens: {
-      phone: "932px",
-      // => @media (min-width: 640px) { ... }
-
-      tablet: "1024px",
-      // => @media (min-width: 1024px) { ... }
-
-      desktop: "1360px",
-      // => @media (min-width: 1280px) { ... }
+      sm: "640px",
+      md: "768px",
+      lg: "960px",
+      xl: "1200px",
+    },
+    fontFamily: {
+      primary: ["Poppins", "sans-serif"],
+    },
+    extend: {
+      colors: {
+        custom: {
+          500: "#15827e",
+          600: "#12625f",
+        },
+      },
     },
   },
   plugins: [],

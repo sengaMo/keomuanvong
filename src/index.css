@@ -6,6 +6,22 @@
   width: 0.5rem;
 }
 
+@layer base {
+  body{
+    @apply font-primary leading-loose;
+  }
+  .h1{
+    @apply text-[24px] xl:text-[40px] leading-[1.1] text-custom-600 font-semibold;
+  }
+  .h2{
+    @apply text-[36px] xl:text-[48x] leading-[1.1] text-custom-600 font-semibold;
+  }
+  .h3{
+    @apply text-[20px] xl:text-[24px] leading-[1.1] text-custom-600 font-semibold;
+  }
+}
+
+
 ::-webkit-scrollbar-track {
   background: #f1f1f1;
 }
@@ -13,4 +29,27 @@
 ::-webkit-scrollbar-thumb {
   background: #888;
   border-radius: 5px ;
+}
+/* 011f1e */
+/* 12625f */
+
+.button-primary {
+  background-color: #12625f;
+}
+
+.text-custom-500 {
+  color: #15827e;
+}
+
+.text-custom-600 {
+  color: #12625f;
+}
+
+
+.outline-custom-500 {
+  outline-color: #15827e;
+}
+
+.outline-custom-600 {
+  outline-color: #12625f;
 }

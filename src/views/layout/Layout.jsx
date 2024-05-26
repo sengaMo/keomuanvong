@@ -1,11 +1,12 @@
 import React from "react";
-import TopBar from "../../components/sidebar/TopBar";
+import Header from "../../components/header/Header";
 
 const Layout = ({ children }) => {
   return (
     <>
-      <TopBar />
-      <section className="w-full">{children}</section>
+      <Header />
+
+      <main>{children}</main>
     </>
   );
 };
