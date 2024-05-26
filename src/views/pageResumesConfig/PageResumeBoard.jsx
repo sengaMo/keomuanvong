@@ -1,9 +1,8 @@
 import React from "react";
 import Layout from "../layout/Layout";
-
 import Resume from "../../pages/resume/Resume";
 
-const PageResume = () => {
+const PageResumeBoard = () => {
   return (
     <Layout>
       <Resume />
@@ -11,4 +10,4 @@ const PageResume = () => {
   );
 };
 
-export default PageResume;
+export default PageResumeBoard;
