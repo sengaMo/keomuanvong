@@ -9,8 +9,4 @@ export default defineConfig({
     outDir: "dist",
     chunkSizeWarningLimit: 100000000,
   },
-  preview: {
-    host: true,
-    port: 9090,
-  },
 });
