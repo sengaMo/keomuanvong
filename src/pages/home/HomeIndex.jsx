@@ -19,14 +19,16 @@ const HomeIndex = () => {
       <div className="container mx-auto h-full">
         <div className="flex flex-col xl:flex-row items-center justify-between xl:pt-8 xl:pb-24">
           <div className="text-center xl:text-left order-2 xl:order-none">
-            <span className="text-xl">FullStack Software Developer</span>
-            <h1 className="h1 mb-6">
-              Hello I'm <br />{" "}
+            <span className="text-xl font-bold">
+              FullStack Software Developer
+            </span>
+            <h1 className="h1 mb-6 font-bold">
+              Hello I'm <br />
               <span className="text-custom-500 uppercase">
                 Sengathit Keomuanvong
               </span>
             </h1>
-            <p className="max-w-[400px] mb-9 text-custom-600/80">
+            <p className="max-w-[340px]  xl:max-w-[400px] mb-9 text-custom-600/80">
               i excel at crafting elegant digital experiences and i am
               proficient in various programming lanaguages and technologies.
             </p>

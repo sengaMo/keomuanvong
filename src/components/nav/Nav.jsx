@@ -31,11 +31,11 @@ const Nav = () => {
 
   return (
     <nav className="flex gap-8">
-      {navItems.map((item) => {
+      {navItems.map((item, index) => {
         return (
           <Link
             to={item.url}
-            key={item.id}
+            key={index}
             className={`${
               item.url === pathname &&
               "text-custom-600 border-b-2 border-emerald-500"

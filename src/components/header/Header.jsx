@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import Nav from "../nav/Nav";
+import MobileNav from "../nav/MobileNav";
 import logo from "../../assets/mylogo.png";
 const Header = () => {
   return (
@@ -8,7 +9,7 @@ const Header = () => {
       <div className="container mx-auto flex justify-between items-center">
         {/* logo */}
         <Link to={"/"} className="flex">
-          <img src={logo} alt="logo" className="w-60 rounded-md" />
+          <img src={logo} alt="logo" className="w-40 xl:w-60 rounded-md" />
           {/* <p className="mt-8">Magpie</p> */}
         </Link>
         {/* nav */}
@@ -18,9 +19,10 @@ const Header = () => {
             <button className="button-primary rounded-md px-2 ">Hire Me</button>
           </Link>
         </div>
-
         {/* mobile nav */}
-        <div className="xl:hidden">mobile nav</div>
+        <div className="xl:hidden text-custom-600">
+          <MobileNav />
+        </div>
       </div>
     </header>
   );
