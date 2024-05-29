@@ -85,7 +85,7 @@ const Resume = () => {
         opacity: 1,
         transition: { duration: 2, ease: "easeInOut" },
       }}
-      className="min-h-[70vh] flex flex-col justify-center py-12 xl:py-0"
+      className="min-h-[60vh] flex flex-col justify-center py-12 xl:py-0"
     >
       <div className="container mx-auto">
         <Tabsls title={titleList} abouts={about} />

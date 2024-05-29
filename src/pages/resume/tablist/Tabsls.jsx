@@ -39,7 +39,7 @@ const Tabsls = ({ title, abouts }) => {
   }, []);
 
   return (
-    <div className="xl:flex h-[60vh]">
+    <div className="xl:flex">
       <ul className="flex-col space-y space-y-4 text-sm font-medium text-custom-600 md:me-4 mb-4 md:mb-0">
         {title.map((item, index) => {
           return (
