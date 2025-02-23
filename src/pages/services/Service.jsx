@@ -7,25 +7,43 @@ const services = [
   {
     id: 1,
     title: "Web Development",
-    description: "I can develop your website using the latest technologies.",
+    description: `Stack.🟢 Node.js (Backend)
+      ⚛️ React + Redux (Frontend)
+      🐬 MySQL | 🐘 PostgreSQL | 🍃 MongoDB (Databases)
+      🔥 Redis (Caching)
+      🐳 Docker Swarm (Container Orchestration)
+      🚀 Nginx (Reverse Proxy)
+
+      Let’s build something amazing! 🚀`,
     link: "#",
   },
   {
     id: 2,
-    title: "Web Design",
-    description: "I can design your website using the latest technologies.",
+    title: "Flutter Development",
+    description: `Stack. 📱 Flutter (Cross-Platform UI)
+🎯 Dart (Programming Language)
+🐬 MySQL | 🐘 PostgreSQL | 🍃 MongoDB (Databases)`,
     link: "#",
   },
   {
     id: 3,
-    title: "Mobile Development",
-    description: "I can develop your mobile app using the latest technologies.",
+    title: "Server Architecture Consultant",
+    description: `🚀 Reverse Proxy: Nginx (Load Balancing & Security)
+🌍 Scalability: Proxmox (Virtualization & Resource Management)`,
     link: "#",
   },
   {
     id: 4,
-    title: "Mobile Design",
-    description: "I can design your mobile app using the latest technologies.",
+    title: "Outsourcing Development",
+    description: `🖥️ Backend: 🟢 Node.js (API & Microservices)
+⚛️ Frontend: React + Redux (Web UI) | 📱 Flutter (Mobile Apps)
+🐬 Databases: MySQL | 🐘 PostgreSQL | 🍃 MongoDB
+🔥 Caching: Redis (High-Speed Data Access)
+🐳 Containerization: Docker Swarm (Orchestration & Deployment)
+🚀 Reverse Proxy: Nginx (Load Balancing & Security)
+🌍 Infrastructure: Proxmox (Virtualization & Cloud Solutions)
+
+Let’s bring your ideas to life with expert development solutions! 🔥`,
     link: "#",
   },
 ];
@@ -38,7 +56,7 @@ const Service = () => {
           initial={{ opacity: 0 }}
           animate={{
             opacity: 1,
-            transition: { duration: 2, ease: "easeInOut" },
+            transition: { duration: 1, ease: "easeInOut" },
           }}
           className="grid grid-cols-1 gap-4 xl:grid-cols-2 xl:gap-20 text-custom-600/80"
         >
@@ -54,7 +72,7 @@ const Service = () => {
                     <BsArrowDownRight />
                   </Link>
                 </div>
-                <h2>{service.title}</h2>
+                <h2 className="font-bold text-xl">{service.title}</h2>
                 <p>{service.description}</p>
                 <div className="border-b border-custom-500 w-full" />
               </div>

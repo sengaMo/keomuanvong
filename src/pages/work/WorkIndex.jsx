@@ -110,7 +110,7 @@ const WorkIndex = () => {
       initial={{ opacity: 0 }}
       animate={{
         opacity: 1,
-        transition: { duration: 2, ease: "easeInOut" },
+        transition: { duration: 1, ease: "easeInOut" },
       }}
       className="min-h-[70vh] flex flex-col justify-center py-12 xl:py-0"
     >
